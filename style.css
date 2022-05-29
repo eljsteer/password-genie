@@ -1,3 +1,8 @@
+:root {
+  --TextDescrColor:#fff;
+  --TextTitleColor:rgba(0, 255, 191);
+}
+
 *,
 *::before,
 *::after {
@@ -23,6 +28,9 @@ body {
   padding-right: 20px;
 }
 .wrapper h1 {
+  font-family: "Courier New", "Lucida Console", monospace;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
   color: #fff;
     text-shadow:
     0 0 10px rgba(0, 255, 191),
@@ -35,15 +43,15 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: rgba(0, 255, 191);
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0 0 0);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: var(--TextDescrColor);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -53,6 +61,7 @@ header {
 .card-header h2{
   margin: 10px;
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .card-header::after {
@@ -84,14 +93,19 @@ header {
   display: block;
   clear: both;
 }
+.password-settings {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+}
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgba(0, 255, 191);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: rgba(0, 255, 191);
+  color: rgba(0, 0, 0);
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -130,12 +144,22 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
-
+#password-length {
+  margin: 12px;
+}
+.lengthcontainer {
+  display: flex;
+  align-items: center;
+}
+.lengthcontainer #passwordlength {
+  width: 50px;
+  height: 25px;
+}
 /* Customize the label (the container) */
 .container {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 62px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
@@ -150,7 +174,7 @@ button[disabled] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  height: 0;
+  height: 100px;
   width: 0;
 }
 
@@ -171,7 +195,7 @@ button[disabled] {
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: rgba(0, 255, 191);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */

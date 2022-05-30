@@ -1,6 +1,6 @@
 :root {
   --TextDescrColor:#fff;
-  --TextTitleColor:rgba(0, 255, 191);
+  --ThemeColor:rgb(0, 204, 255);
 }
 
 *,
@@ -33,17 +33,17 @@ body {
   letter-spacing: 1.5px;
   color: #fff;
     text-shadow:
-    0 0 10px rgba(0, 255, 191),
-    0 0 20px rgba(0, 255, 191),
-    0 0 40px rgba(0, 255, 191),
-    0 0 80px rgb(0, 255, 191),
-    0 0 120px rgba(0, 255, 191);
+    0 0 10px var(--ThemeColor),
+    0 0 20px var(--ThemeColor),
+    0 0 40px var(--ThemeColor),
+    0 0 80px var(--ThemeColor),
+    0 0 120px var(--ThemeColor);
 }
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: rgba(0, 255, 191);
+  color: var(--ThemeColor);
 }
 
 .card {
@@ -101,7 +101,7 @@ header {
 
 .btn {
   border: none;
-  background-color: rgba(0, 255, 191);
+  background-color: var(--ThemeColor);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -195,7 +195,7 @@ button[disabled] {
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: rgba(0, 255, 191);
+  background-color: var(--ThemeColor);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */

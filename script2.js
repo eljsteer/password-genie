@@ -2,7 +2,7 @@
 const generateBtn = document.querySelector("#generate");
 
   // Array of lowercase characters 
-  var lowerCaseCharArray = [
+  var lowerCaseChars = [
     'a',
     'b',
     'c',
@@ -31,7 +31,7 @@ const generateBtn = document.querySelector("#generate");
     'z'
   ];
   // Array of uppercase characters 
-  var upperCaseCharArray = [
+  var upperCaseChars = [
     'A',
     'B',
     'C',
@@ -61,7 +61,7 @@ const generateBtn = document.querySelector("#generate");
   ];
 
   // Array of numeric characters 
-  var numberCharArray = [
+  var numberChars = [
     '0',
     '1',
     '2',
@@ -72,10 +72,10 @@ const generateBtn = document.querySelector("#generate");
     '7',
     '8',
     '9'
-   ];
+  ];
 
 // Array of specialCharacters
-var specialCharArray = [
+var specialChars = [
     '@',
     '%',
     '+',
@@ -101,50 +101,42 @@ var specialCharArray = [
     '.'
   ];
 
-// Functions to get random variable from array of option
-
-function getRandomLower() {
-  return lowerCaseCharArray[Math.floor(Math.random() * lowerCaseCharArray.length)]
-}
-function getRandomUpper() {
-  return upperCaseCharArray[Math.floor(Math.random() * upperCaseCharArray.length)]
-}
-function getRandomNumber() {
-  return numberCharArray[Math.floor(Math.random() * numberCharArray.length)]
-}
-function getRandomspecial() {
-  return specialCharArray[Math.floor(Math.random() * specialCharArray.length)]
-}
-
-let randomiseFuncArray = [
-  getRandomLower,
-  getRandomUpper,
-  getRandomNumber,
-  getRandomspecial,
-];
+function writePassword(password) {
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
+};
 
 generateBtn.addEventListener('click', function(){
 var lengthSelect = document.getElementById("passwordlength").value;
 var lowerCaseSelect = document.getElementById("lowercase").checked
 var upperCaseSelect = document.getElementById("uppercase").checked
-var numericalSelect = document.getElementById("number").checked
+var numberSelect = document.getElementById("number").checked
 var specialSelect = document.getElementById("special").checked
-
 var generatedPassword = ''
+var userSelectedArray = [];
 
-for (var i = 0; i < lengthSelect; i++) {
-  let choose = Math.floor(Math.random() * 4)
-  // choose = # relating to function in array
-  let build = randomiseFuncArray[choose]
-  // f = getRandomspecial
-  generatedPassword += build()
-  // password += getRandomspecial()
+function buildPassword() {
+  return userSelectedArray[Math.floor(Math.random() * userSelectedArray.length)]
+}
+console.log(buildPassword)
+if(lowerCaseSelect) {
+  userSelectedArray += lowerCaseChars
+}
+if(upperCaseSelect) {
+  userSelectedArray += upperCaseChars
+}
+if(numberSelect) {
+  userSelectedArray += numberChars
+}
+if(specialSelect) {
+  userSelectedArray += specialChars
 }
 
-function writePassword(password) {
-    var passwordText = document.querySelector("#password");
-    passwordText.value = password;
-  };
+for (var i = 0; i < lengthSelect; i++) {
+  generatedPassword += buildPassword(Math.floor(Math.random() * userSelectedArray.length));
+}
 
   writePassword(generatedPassword);
-})
+});
+
+

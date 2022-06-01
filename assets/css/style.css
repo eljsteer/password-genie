@@ -98,7 +98,7 @@ header {
   font-weight: 600;
   font-family: 'Courier New', Courier, monospace;
 }
-
+/*Button styling*/
 .btn {
   border: none;
   background-color: var(--ThemeColor);
@@ -123,7 +123,7 @@ button[disabled] {
 .float-right {
   float: right;
 }
-
+/*Password print area styling*/
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -223,6 +223,7 @@ button[disabled] {
   transform: rotate(45deg);
 }
 
+/* Media Queries to adjust button and text area formatting on screen resize */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;

@@ -2,6 +2,12 @@
 
 This is an application which will generate a random Password with the option to use 4 different variables (Lowercase, Uppercase, Numbers & Special characters).
 
+- I have created the Password generator 2 different ways. 
+    - One using strings (script.js = Strings), and 
+    - Another way using arrays (script2.js = Arrays)
+
+Please check both 
+
 ## Inspiration
 
 - I had the inspiration to build this Password Generator (Genie) application to develop my Javascript skills. Inspiration also came from the need to have a easier accessible tool with which to generate passwords since I will be interacting with a lot more different software and applications that require accounts and logins, requiring secure passwords (which aren't just the same 2 or 3 memorised password I had been using.)
@@ -24,6 +30,7 @@ This is an application which will generate a random Password with the option to 
 ## Skills and Knowledge learned
 
 I learned a lot from all aspects on this project also, particularly on the design and methodology.
+- I learnt to create the password generator 2 different ways. One using strings and another using arrays (script.js = Strings and script2.js = Arrays)
 - Initially I learnt from the design side of the application and how important it was to design the application and have the different components broken down to implement each section simply.
 - I learnt from the process of deciding whether to use prompts for the user to select the setting or to use the checkboxes and decided upon the checkboxes for multiple reasons; easier for the user to see and decide which setting they want or selected previously and also I found it easier to retrieve those values compared with thsoe stored in the prompts.
 - Greatly improved my knowledge around functions in Javascript.

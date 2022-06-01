@@ -115,25 +115,28 @@ var specialSelect = document.getElementById("special").checked
 var generatedPassword = ''
 var userSelectedArray = [];
 
-function buildPassword() {
-  return userSelectedArray[Math.floor(Math.random() * userSelectedArray.length)]
-}
-console.log(buildPassword)
-if(lowerCaseSelect) {
-  userSelectedArray += lowerCaseChars
-}
-if(upperCaseSelect) {
-  userSelectedArray += upperCaseChars
-}
-if(numberSelect) {
-  userSelectedArray += numberChars
-}
-if(specialSelect) {
-  userSelectedArray += specialChars
+// Conditional statement to restrict the password length and enforce that one setting is selected
+if (lengthSelect < 8 || lengthSelect > 128) {
+  window.alert("Password must be between 8 and 128 Characters, Please reenter in # of Characters")
+  return
 }
 
+if(lowerCaseSelect) {
+  userSelectedArray = userSelectedArray.concat(lowerCaseChars)
+}
+if(upperCaseSelect) {
+  userSelectedArray = userSelectedArray.concat(upperCaseChars)
+}
+if(numberSelect) {
+  userSelectedArray = userSelectedArray.concat(numberChars)
+}
+if(specialSelect) {
+  userSelectedArray = userSelectedArray.concat(specialChars)
+}
+
+
 for (var i = 0; i < lengthSelect; i++) {
-  generatedPassword += buildPassword(Math.floor(Math.random() * userSelectedArray.length));
+  generatedPassword += userSelectedArray[Math.floor(Math.random() * userSelectedArray.length)];
 }
 
   writePassword(generatedPassword);

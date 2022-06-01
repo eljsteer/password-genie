@@ -27,7 +27,7 @@ generateBtn.addEventListener('click', function(){
     window.alert("Password must be between 8 and 128 Characters, Please reenter in # of Characters")
     return
   }
-  if (lowerCaseSelect && upperCaseSelect && numericalSelect && specialSelect === false ) {
+  if (!lowerCaseSelect && !upperCaseSelect && !numericalSelect && !specialSelect) {
     window.alert("Must select at least one Password Variable")
     return
   }

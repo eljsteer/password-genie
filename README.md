@@ -34,13 +34,9 @@ I learned a lot from all aspects on this project also, particularly on the desig
 
 ## Application Example Images & Videos
 
-### Password Genie USer Interface
-x
-![Password Genie Feature Showcase Video](assets/media/password-genie_ui.jpg)
+### Password Genie User Interface Showcase Video
 
-### Showcase
-
-![Password Genie Feature Showcase Video](assets/media/password-genie_showcase.mp4)
+[![Password Genie Feature Showcase Video](assets/media/password-genie_ui.jpg)](assets/media/password-genie_showcase.mp4 "Click to Watch")
 
 
 ## Credits

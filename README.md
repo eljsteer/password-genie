@@ -6,7 +6,7 @@ This is an application which will generate a random Password with the option to 
     - One using strings (script.js = Strings), and 
     - Another way using arrays (script2.js = Arrays)
 
-Please check both 
+Please Enjoy both Methods
 
 ## Inspiration
 

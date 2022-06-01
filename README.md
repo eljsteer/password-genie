@@ -38,6 +38,9 @@ I learned a lot from all aspects on this project also, particularly on the desig
 
 [![Password Genie Feature Showcase Video](assets/media/password-genie_ui.jpg)](assets/media/password-genie_showcase.mp4 "Click to Watch")
 
+### Password Genie video showcasing error prompt
+[![Password Genie Feature Video showcasing error prompt](assets/media/password-genie_ui.jpg)](assets/media/password-genie_showcase_errorprompt.mp4 "Click to Watch")
+
 
 ## Credits
 - https://www.w3schools.com/howto/howto_css_custom_checkbox.asp

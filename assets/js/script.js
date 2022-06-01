@@ -37,20 +37,20 @@ generateBtn.addEventListener('click', function(){
     charsToUse += lowerCaseChars
   }
   if(upperCaseSelect) {
-    charToUse += upperCaseChars
+    charsToUse += upperCaseChars
   }
   if(numericalSelect) {
-    charToUse += numericalChars
+    charsToUse += numericalChars
   }
   if(specialSelect) {
-    charToUse += specialChars
+    charsToUse += specialChars
   }
   var generatedPassword = ''
 
 
 // This loop keeps repeating as many times as the number selected for the password length by the User.
   for (var i = 0; i < lengthSelect; i++) {
-    generatedPassword += charToUse.charAt(Math.floor(Math.random() * charToUse.length));
+    generatedPassword += charsToUse.charAt(Math.floor(Math.random() * charsToUse.length));
   }
  
   writePassword(generatedPassword);

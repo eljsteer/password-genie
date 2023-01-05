@@ -1,5 +1,7 @@
 # Password-Genie
 
+## Summary
+
 This is an application which will generate a random Password with the option to use 4 different variables (Lowercase, Uppercase, Numbers & Special characters).
 
 - I have created the Password generator 2 different ways. 
@@ -7,6 +9,9 @@ This is an application which will generate a random Password with the option to 
     - Another way using arrays (script2.js = Arrays)
 
 Please Enjoy both Methods
+
+## Deployed Application
+To Deploy please click [Here](https://eljsteer.github.io/password-genie/)
 
 ## Inspiration
 
